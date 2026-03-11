@@ -21,7 +21,6 @@ return new class extends Migration
         $table->decimal('salary', 8, 2);
         $table->unsignedBigInteger('manager_id')->nullable();
         $table->foreignId('department_id')->constrained('departments', 'department_id');
-        $table->timestamps();
 
         // Self-referencing relationship
         $table->foreign('manager_id')->references('employee_id')->on('employees');

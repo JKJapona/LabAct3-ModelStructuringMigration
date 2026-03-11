@@ -15,7 +15,6 @@ return new class extends Migration
         $table->string('job_title', 35);
         $table->decimal('min_salary', 8, 2)->nullable();
         $table->decimal('max_salary', 8, 2)->nullable();
-        $table->timestamps();
     });
 }
 

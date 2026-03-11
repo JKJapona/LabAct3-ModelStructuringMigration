@@ -13,7 +13,6 @@ return new class extends Migration
     Schema::create('regions', function (Blueprint $table) {
         $table->id('region_id'); // Using custom ID name from ERD
         $table->string('region_name', 25)->nullable();
-        $table->timestamps();
     });
 }
 

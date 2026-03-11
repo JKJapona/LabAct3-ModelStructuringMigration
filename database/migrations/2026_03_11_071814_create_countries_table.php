@@ -14,7 +14,6 @@ return new class extends Migration
         $table->char('country_id', 2)->primary(); // Primary Key as Char(2)
         $table->string('country_name', 40)->nullable();
         $table->foreignId('region_id')->constrained('regions', 'region_id');
-        $table->timestamps();
     });
 }
 

@@ -16,7 +16,6 @@ return new class extends Migration
         $table->string('last_name', 50);
         $table->string('relationship', 25);
         $table->foreignId('employee_id')->constrained('employees', 'employee_id');
-        $table->timestamps();
     });
 }
 

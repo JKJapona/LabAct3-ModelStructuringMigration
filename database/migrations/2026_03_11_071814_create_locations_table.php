@@ -18,7 +18,6 @@ return new class extends Migration
         $table->string('state_province', 25)->nullable();
         $table->char('country_id', 2);
         $table->foreign('country_id')->references('country_id')->on('countries');
-        $table->timestamps();
     });
 }
 
